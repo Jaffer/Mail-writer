@@ -10,9 +10,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 
-# =========================
-# 🔐 LOAD ENV VARIABLES
-# =========================
+# LOAD ENV VARIABLES
 load_dotenv()
 api_key = os.getenv("GROQ_API_KEY")
 
@@ -20,14 +18,10 @@ if not api_key:
     st.error("❌ GROQ_API_KEY not found. Please check your .env file.")
     st.stop()
 
-# =========================
-# ⚙️ CONFIG
-# =========================
+# CONFIG
 st.set_page_config(page_title="AI Mail Engine", page_icon="✉️", layout="centered")
 
-# =========================
-# 🎨 CSS
-# =========================
+# CSS
 st.markdown("""
 <style>
     *:focus { outline: none !important; }
@@ -48,9 +42,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# =========================
-# 🤖 MODEL
-# =========================
+# MODEL
 class EmailOutput(BaseModel):
     subject: str
     body: str
@@ -63,9 +55,7 @@ llm = ChatGroq(
 
 structured_llm = llm.with_structured_output(EmailOutput)
 
-# =========================
-# 🧹 HELPERS
-# =========================
+# HELPERS
 def clean_for_gmail(text: str) -> str:
     return text.replace("**", "").replace("### ", "").replace("\n* ", "\n• ").replace("\n- ", "\n• ")
 
@@ -85,9 +75,7 @@ def extract_text_from_file(uploaded_file):
     except Exception as e:
         return f"Error reading file: {str(e)}"
 
-# =========================
-# 💾 DATABASE
-# =========================
+# DATABASE
 DB_FILE = "saved_emails.json"
 
 def load_db():
@@ -103,22 +91,18 @@ def save_db(data):
     with open(DB_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
-# =========================
-# 🧠 SESSION
-# =========================
+# SESSION
 if "db" not in st.session_state:
     st.session_state.db = load_db()
 
 if "current_id" not in st.session_state:
     st.session_state.current_id = None
 
-# =========================
-# 📚 SIDEBAR
-# =========================
+# SIDEBAR
 with st.sidebar:
     st.markdown("### 🗂️ Inbox History")
 
-    if st.button("➕ Create New Draft", use_container_width=True, type="primary"):
+    if st.button("Create New Draft", use_container_width=True, type="primary"):
         st.session_state.current_id = None
         st.rerun()
 
@@ -149,16 +133,12 @@ with st.sidebar:
                     save_db(st.session_state.db)
                     st.rerun()
 
-# =========================
-# 🖥️ MAIN
-# =========================
+# MAIN
 st.markdown("<h1 style='text-align: center;'>✉️ Mail Engine</h1>", unsafe_allow_html=True)
 
 is_new_email = st.session_state.current_id is None
 
-# =========================
-# ✍️ COMPOSE MODE
-# =========================
+# COMPOSE MODE
 if is_new_email:
     st.markdown("### 📝 Compose Mail")
 
@@ -224,9 +204,7 @@ if is_new_email:
                     st.session_state.current_id = new_id
                     st.rerun()
 
-# =========================
-# 👁️ REVIEW MODE
-# =========================
+# REVIEW MODE
 else:
     st.markdown("### 👁️ Review & Refine")
 

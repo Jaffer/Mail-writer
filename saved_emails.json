@@ -13,5 +13,28 @@
             }
         ],
         "current_page": 0
+    },
+    "0fc945d6-e47c-4e5b-9211-01dc493939ff": {
+        "title": "Request for Emergency Budget Approval for Project Titan",
+        "recipient": "Sarah (VP of Operations)",
+        "drafts": [
+            {
+                "subject": "Request for Emergency Budget Approval for Project Titan",
+                "body": "Dear Sarah, \n\nI am writing to request approval for an emergency budget of $1,500 to cover extra hours for our freelance database engineer due to unforeseen delays in Project Titan. The third-party payment gateway API maintenance has pushed our Phase 2 launch date back to April 12th. \n\nPlease let me know if this is feasible. I appreciate your prompt attention to this matter. \n\nBest regards, Alex"
+            },
+            {
+                "subject": "Request for Emergency Budget Approval for Project Titan",
+                "body": "Dear Sarah, \n\n I am writing to request approval for an emergency budget of $1,500 to cover extra hours for our freelance database engineer due to unforeseen delays in Project Titan. The third-party payment gateway API maintenance has pushed our Phase 2 launch date back to April 12th. \n\n Key points to consider: \n\n * The additional budget will ensure timely completion of the project \n * The delay is due to unforeseen circumstances beyond our control \n * The new launch date of April 12th is still achievable with the extra hours \n\n Please let me know if this is feasible. I appreciate your prompt attention to this matter. \n\n Best regards, Alex"
+            },
+            {
+                "subject": "Request for Emergency Budget Approval for Project Titan",
+                "body": "Dear Sarah, \n\n I am writing to request approval for an emergency budget of $1,500 to cover extra hours for our freelance database engineer due to unforeseen delays in Project Titan. The third-party payment gateway API maintenance has pushed our Phase 2 launch date back to April 12th. \n\n Key points to consider: \n\n * The additional budget will ensure timely completion of the project \n * The delay is due to unforeseen circumstances beyond our control \n * The new launch date of April 12th is still achievable with the extra hours \n * The extra hours will be used to complete the remaining tasks, including testing and debugging \n * The freelance database engineer has agreed to work the extra hours and has provided a detailed breakdown of the additional costs \n * I have attached a revised project timeline and budget breakdown for your review \n\n Please let me know if this is feasible. I appreciate your prompt attention to this matter. \n\n Best regards, Alex"
+            },
+            {
+                "subject": "Request for Emergency Budget Approval for Project Titan",
+                "body": "Hello Sarah, \n\n I am writing to request approval for an emergency budget of $1,500 to cover extra hours for our freelance database engineer due to unforeseen delays in Project Titan. The third-party payment gateway API maintenance has pushed our Phase 2 launch date back to April 12th. \n\n Key points to consider: \n\n * The additional budget will ensure timely completion of the project \n * The delay is due to unforeseen circumstances beyond our control \n * The new launch date of April 12th is still achievable with the extra hours \n * The extra hours will be used to complete the remaining tasks, including testing and debugging \n * The freelance database engineer has agreed to work the extra hours and has provided a detailed breakdown of the additional costs \n * I have attached a revised project timeline and budget breakdown for your review \n\n Please let me know if this is feasible. I appreciate your prompt attention to this matter. \n\n Best regards, Alex"
+            }
+        ],
+        "current_page": 3
     }
 }
