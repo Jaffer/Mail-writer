@@ -1,0 +1,17 @@
+{
+    "e4944aab-b852-4b5e-88f1-95283848dd49": {
+        "title": "Update on Feature Launch",
+        "recipient": "Sarah@GlobalTech.com",
+        "drafts": [
+            {
+                "subject": "Update on Feature Launch",
+                "body": "Dear Sarah,\n\nWe are writing to inform you that the launch of our 'Dark Mode' feature has been delayed by 7 days due to a minor bug found during final testing. The new launch date is set for next Wednesday.\n\nAs a gesture of goodwill for the inconvenience caused, we would like to offer a 5% discount on next month's subscription. We apologize for any disruption this may have caused and appreciate your understanding in this matter.\n\nBest regards, Alex"
+            },
+            {
+                "subject": "Update on Feature Launch",
+                "body": "Hello Sarah,\n\nWe are writing to inform you that the launch of our 'Dark Mode' feature has been delayed by 7 days due to a minor bug found during final testing. The new launch date is set for next Wednesday.\n\nAs a gesture of goodwill for the inconvenience caused, we would like to offer a 5% discount on next month's subscription. We apologize for any disruption this may have caused and appreciate your understanding in this matter.\n\nBest regards, Alex"
+            }
+        ],
+        "current_page": 0
+    }
+}
