@@ -121,12 +121,12 @@ with st.sidebar:
             with st.popover("⋮", use_container_width=True):
                 new_title = st.text_input("Rename", value=email_data['title'], key=f"input_{email_id}")
 
-                if st.button("💾 Save", key=f"save_{email_id}", use_container_width=True):
+                if st.button("Save", key=f"save_{email_id}", use_container_width=True):
                     st.session_state.db[email_id]['title'] = new_title
                     save_db(st.session_state.db)
                     st.rerun()
 
-                if st.button("🗑️ Delete", key=f"del_{email_id}", use_container_width=True):
+                if st.button("Delete", key=f"del_{email_id}", use_container_width=True):
                     del st.session_state.db[email_id]
                     if st.session_state.current_id == email_id:
                         st.session_state.current_id = None
