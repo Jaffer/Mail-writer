@@ -206,7 +206,7 @@ if is_new_email:
 
 # REVIEW MODE
 else:
-    st.markdown("### 👁️ Review & Refine")
+    st.markdown("### Review & Refine")
 
     thread = st.session_state.db[st.session_state.current_id]
     current_idx = thread["current_page"]
